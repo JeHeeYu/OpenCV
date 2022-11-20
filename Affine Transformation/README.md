@@ -123,4 +123,17 @@ dsize 인자에 Size()를 전달하면 입력 영상과 같은 크기의 결과 
 <br>
 warpAffine()함수는 7개의 인자를 가지고 있지만, 3개는 기본 값을 가지고 있어 처음 4개의 인자만 지정해서 사용할 수 있다.
   
-### [예제 코드]()
+### [예제 코드](https://github.com/JeHeeYu/OpenCV/tree/main/Affine%20Transformation)
+
+## 실행 결과
+<img src="https://user-images.githubusercontent.com/87363461/202886030-a7734e98-1bdc-4b34-a460-b233bdae94c9.JPG" width="600" height="300">
+<br>
+<br>
+입력 영상과 출력 영상에서 좌표를 저장할 srcPts, dstPts를 배열로 선언한다.
+<br>
+srcPts 배열에는 입력 영상의 좌측 상단, 우측 상단, 우측 하단의 좌표를 저장하고
+<br>
+dstPts 배열에는 srcPts 점들이 이동할 좌표를 저장한다.
+<br>
+<br>
+Mat 객체 M에 getAffineTransform() 함수를 이용하여 어파인 변환 행렬을 저장한다.

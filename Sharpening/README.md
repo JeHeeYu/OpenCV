@@ -47,12 +47,12 @@
 OpenCV는 언샤프 마스크 필터를 위한 함수를 따로 제공하지 않는다.
 <br>
 <br>
-## [예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Sharpening/Sharpening.cpp)
+### [예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Sharpening/Sharpening.cpp)
 <br>
 <br>
+
 ## 실행 결과
 <img src="https://user-images.githubusercontent.com/87363461/202885404-ff4a34ac-6b80-4678-b302-ff87be77af4a.JPG" width="600" height="400">
-<br>
 <br>
 1 ~ 5 sigma의 값에 의해 생성된 언샤프 마스크 필터링 결과 영상이다.
 <br>

@@ -128,7 +128,6 @@ warpAffine()함수는 7개의 인자를 가지고 있지만, 3개는 기본 값�
 ## 실행 결과
 <img src="https://user-images.githubusercontent.com/87363461/202886030-a7734e98-1bdc-4b34-a460-b233bdae94c9.JPG" width="600" height="300">
 <br>
-<br>
 입력 영상과 출력 영상에서 좌표를 저장할 srcPts, dstPts를 배열로 선언한다.
 <br>
 srcPts 배열에는 입력 영상의 좌측 상단, 우측 상단, 우측 하단의 좌표를 저장하고

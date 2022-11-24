@@ -118,3 +118,8 @@ img 영상의 position 좌표에 color 색상을 이용하여 마커를 그린�
 |MARKER_TRIANGLE_DOWN|역삼각형 모양 ( ∇ 모양)|
 
 <br>
+
+### [Marker Draw 함수 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Line%20Draw/MarkerDraw.cpp)
+
+### 실행 결과
+![image](https://user-images.githubusercontent.com/87363461/203675939-06ba44bb-6685-4d02-aeba-49a9b5cc683c.png)

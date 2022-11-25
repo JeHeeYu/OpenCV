@@ -137,4 +137,30 @@ drawContours() 함수는 findContours() 함수로 얻은 외곽선 정보를 이
 <br>
 전체 외곽선을 한꺼번에 그릴 수도 있고, 특정 번호의 외곽선을 선택하는 등 여러 방법으로 그릴 수 있다.
   
-### [외곽선 검출 예제 코드]()
+### [외곽선 검출 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Contour/Contour.cpp)
+
+### 실행 결과
+![image](https://user-images.githubusercontent.com/87363461/203920990-7803303f-b004-4874-85ad-17183572c3ae.png)
+  
+<br>
+
+왼쪽 영상부터 src, dst1, dst2 이다.
+<br>
+<br>
+dst1 영상에서 외곽선 검출은 RETR_LIST 검출 모드를 사용하여 findContours() 함수를 호출한다.
+<br>
+그러므로 모든 객체의 바깥쪽과 안쪽 홀 외곽선을 모두 검출하지만, 부모/자식 간의 계층 정보는 얻어 오지 않는다.
+<br>
+<br>
+검출된 전체 외곽선 개수 contours.size() 코드를 이용하여 for반복문을 수행하며 전체 외곽선을 그린다.
+<br>
+<br>
+dst2 영상에서 vector<Vec4i> 타입의 변수 hierachy를 findContours() 함수에 전달하여 외곽선 계층 정보를 추출한다.
+<br>
+RETR_CCOMP 모드이기 때문에 2단계로 구성된 계층 구조가 만들어진다.
+<br>
+<br>
+외곽선 계층 정보 hierarchy 변수를 전달하였기 때문에 객체 바깥쪽 외곽선부터 안쪽 홀 외곽선까지
+<br>
+객체 영역만 파란색으로 채워진다.
+

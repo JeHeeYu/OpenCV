@@ -158,3 +158,11 @@ maxSize : 검출할 객체의 최대 크기
 <br>
 만약 입력 영상이 3채널 컬러 영상이면 함수 내부에서 그레이스케일 형식으로 반환하여 객체를 검출한다.
 
+### [캐스케이드 얼굴 검출 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Cascade%20Classifier/FaceDetection.cpp)
+
+### 실행 결과
+![image](https://user-images.githubusercontent.com/87363461/203925051-86419dba-f687-49fd-8163-5f395b729020.png)
+
+<br>
+
+성공적으로 얼굴과 눈이 검출되는 것을 볼 수 있다.

@@ -19,15 +19,20 @@
 위의 그림과 같이 영상을 x 방향으로 a 만큼, y 방향으로 b 만큼 이동하는 어파인 변환 행렬은 M과 같이 구할 수 있다.
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/87363461/203901979-eb0f0091-be73-4cec-8eb2-acc1c9e290df.png)
+
+![image](https://user-images.githubusercontent.com/87363461/203903657-678c1b54-c2f6-4c30-bbb9-8846a8514694.png)
+
 <br>
+
 <br>
 OpenCV에서 영상을 이동 변환하려면 2 x 3 형태의 실수 행렬을 만들고, 이를 warpAffine() 함수 인자로 전달한다.
 
 ### [영상 이동 변환 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Transformation/Translation.cpp)
 
 ### 실행 결과
+
 ![image](https://user-images.githubusercontent.com/87363461/203902202-9464c061-4a8a-4d1b-b85b-97c2b8bcc52a.png)
+
 <br>
 <br>
 src 원본 영상에서 이미지가 x 좌표로부터 150 픽셀, y좌표로부터 100픽셀 만큼 시프트 연산된 것을 볼 수 있다.
@@ -41,6 +46,7 @@ src 원본 영상에서 이미지가 x 좌표로부터 150 픽셀, y좌표로부
 층밀림 변환 이라고도 한다.
 <br>
 <br>
+
 ![image](https://user-images.githubusercontent.com/87363461/203902264-dee5d617-6de6-45a0-8b0e-9ec27abfcfd6.png)
 
 <br>
@@ -55,6 +61,7 @@ x좌표가 증가함에 따라 영상이 세로 방향으로 이동하는 변환
 입력 영상에서 원점은 전단 변환에 의해 이동하지 않고 그대로 원점에 머물러 있는다.
 <br>
 <br>
+
 ![image](https://user-images.githubusercontent.com/87363461/203902302-3ef4c7fd-6464-45da-9993-c02045f1f029.png)
 
 <br>
@@ -64,6 +71,7 @@ mx와 my는 각각 가로 방향과 세로 방향으로 밀림 전단을 나타�
 ### [영상 전단 변환 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Transformation/Shear.cpp)
 
 ### 실행 결과
+
 ![image](https://user-images.githubusercontent.com/87363461/203902431-503eb5db-7a7d-4d04-850c-bb04fcd4f5be.png)
 
 <br>
@@ -81,6 +89,7 @@ y좌표가 증가함에 따라 0.3y에 해당하는 x 좌표에서 원본 영상
 <br>
 
 ![image](https://user-images.githubusercontent.com/87363461/203902516-6f6729ad-fb25-4d3e-a804-9c865fcc552c.png)
+
 <br>
 <br>
 노란색 사각형 영역은 w x h 크기의 원본 영상이고, 녹색으로 표시한 영역은 w' x h' 크기로 확대된 결과 영상이다.
@@ -90,6 +99,7 @@ y좌표가 증가함에 따라 0.3y에 해당하는 x 좌표에서 원본 영상
 영상의 크기 변환을 나타내는 어파인 변환 행렬은 M과 같다.
 <br>
 <br>
+
 ![image](https://user-images.githubusercontent.com/87363461/203902583-c3fcfca4-7259-4020-b33d-e37fb93b531b.png)
 
 <br>
@@ -142,6 +152,7 @@ INTER_AREA 밥업을 사용하면 모아레(moire) 현상이 적게 발생하며
 ### [영상 크기 변환 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Transformation/Scale.cpp)
 
 ### 실행 결과
+
 ![image](https://user-images.githubusercontent.com/87363461/203903054-e6809eb1-5a67-4f3e-a9b7-d2a73fabcd91.png)
 <br>
 <br>
@@ -155,7 +166,9 @@ dst1 ~ 4 영상은 reisze() 함수에 의해 4배 확대된 결과 영상에서 
 영상 처리 시스템에서 입력 영상을 회전하는 경우는 자주 발생한다.
 <br>
 <br>
+
 ![image](https://user-images.githubusercontent.com/87363461/203903105-a15abe1b-513a-4278-9547-e57a827004e0.png)
+
 <br>
 <br>
 노란색 사각형은 원본 영상이고, 녹색으로 표시한 사각형이 회전 변환으로 생성된 결과이다.
@@ -196,7 +209,9 @@ ROTATE_180 : 180도 회전
 ### [영상 회전 변환 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Transformation/Rotation.cpp)
 
 ### 실행 결과
+
 ![image](https://user-images.githubusercontent.com/87363461/203903280-a0f22ba1-626d-4291-bf0c-373f63f040ea.png)
+
 <br>
 <br>
 영상의 중심 좌표를 2Pointf 자료형의 변수 cp에 저장한다.

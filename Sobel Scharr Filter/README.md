@@ -144,4 +144,18 @@ angle : 벡터의 방향을 나타내는 실수 행렬 또는 벡터. x와 같�
 angleInDegrees : 이 값이 true이면 각도(degree) 단위를 사용하고, false이면 라디안(radian) 단위를 사용함
 ```
 
-### 
+### [소벨 필터 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Sobel%20Scharr%20Filter/SobelFilter.cpp)
+
+### 실행 결과
+![image](https://user-images.githubusercontent.com/87363461/203905017-c03d7cee-1a4e-4bd9-ac6e-0d4e44680980.png)
+
+<br>
+<br>
+각 픽셀에서 계산된 그래디언트 크기가 255보다 큰 경우에는 포화 연산에 의해 흰색으로 표현된다.
+<br>
+edge 영상은 그래디언트 크기가 150보다 큰 픽셀은 흰색으로, 그렇지 않은 픽셀은 검은색으로 표현된 이진 영상이다.
+<br>
+<br>
+임계값을 150보다 낮게 설정하면 더 많은 에지 픽셀이 edge 영상에 나타난다.
+<br>
+임계값을 너무 낮출 경우 잡음의 영향도 에지로 검출될 수 있다.

@@ -67,3 +67,20 @@ mask : 마스크 영상
 
 각각 OR, AND, NOT, XOR 순으로 OpenCV에서 제공하는 함수이다.
 
+### [예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Logical/Logical.cpp)
+
+
+### 실행 결과
+![image](https://user-images.githubusercontent.com/87363461/203889306-79f4e7f7-3e43-4132-bc05-9264e49a89cb.png)
+<br>
+<br>
+
+Mat 객체 src1, src2에 각각 다른 영상을 저장하고 두 영상간의 논리 연산을 수행한다.
+<br>
+<br>
+위 2개의 영상을 각각 src1, src2로 저장한 영상이다.
+<br>
+각 영상의 논리 연산 결과는 아래 이미지와 같다.
+<br>
+<br>
+![image](https://user-images.githubusercontent.com/87363461/203889371-d5111efb-967b-4a76-a950-ff241087668d.png)

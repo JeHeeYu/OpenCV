@@ -35,7 +35,9 @@
 빈 개수가 많아지면 세밀한 픽셀 값 분포 표현이 가능하다.
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/87363461/203883665-2f9ed31f-cc62-4f7f-94fd-4aa20e596906.png)
+
+![image](https://user-images.githubusercontent.com/87363461/203884651-bbf4655c-f06f-4947-a885-f9893cd44d29.png)
+
 <br>
 <br>
 0번 빈 : 픽셀 값이 0, 1인 픽셀 개수
@@ -145,7 +147,6 @@ Mat HistGraph(const Mat& hist)
 ![image](https://user-images.githubusercontent.com/87363461/203883921-6a60963e-7c1c-4d41-9075-266c9372cbcd.png)
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/87363461/203883943-ba06518f-f31a-4146-a344-9898440f0be2.png)
 dst : 출력 영상
 <br>
 <br>

@@ -99,8 +99,8 @@ userdata : setMouseCallback() 함수에서 설정한 사용자 데이터의 포�
 <br>
 event 인자에는 MouseEventTypes 열거형 상수를 지정할 수 있다.
 
-|MouseEventTypes 열거형 상수|값||설명|
-|:---:|:---:||:---:
+|MouseEventTypes 열거형 상수|값|설명|
+|:---:|:---:|:---:|
 |EVENT_MOUSEMOVE|0|마우스가 창 위에서 움직이는 경우|
 |EVENT_LBUTTONDOWN|1|마우스 왼쪽 버튼을 누를 경우|
 |EVENT_RBUTTONDOWN|2|마우스 오른쪽 버튼을 누를 경우|
@@ -116,8 +116,8 @@ event 인자에는 MouseEventTypes 열거형 상수를 지정할 수 있다.
 
 flags 인자에는 MouserEventFlags 열거형 상수의 논리합 조합이 전달된다.
 
-|MouseEventTypes 열거형 상수|값||설명|
-|:---:|:---:||:---:
+|MouseEventTypes 열거형 상수|값|설명|
+|:---:|:---:|:---:|
 |EVENT_FLAG_LBUTTON|1|마우스 왼쪽 버튼이 눌려 있음|
 |EVENT_FLAG_RBUTTON|2|마우스 오른쪽 버튼이 눌려 있음|
 |EVENT_FLAG_MBUTTON|4|마우스 가운데 버튼이 눌려 있음|

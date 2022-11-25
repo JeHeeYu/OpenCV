@@ -64,4 +64,20 @@ TM_CCOEFF는 상관계수 매칭 방법을 의미하며, 이는 비교할 두 �
 <br>
 matchTemplate() 함수의 마지막 인자 mask는 TM_SQDIFF와 TM_CCORR_NORMED 방법에서만 지원된다.
 
-## [템플릿 매칭 예제 코드]
+## [템플릿 매칭 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Template%20Matching/TemplateMatching.cpp)
+
+### 실행 결과
+![image](https://user-images.githubusercontent.com/87363461/203923609-e45f3aeb-e7b9-4d84-b79f-95d62c081ede.png)
+
+왼쪽 그림은 입력 영상인 circle 파일이다. 오른쪽 아래 그림을 템플릿으로 사용하여 입력 영상에서 같은 부분을 찾아 사각형으로 표시한다.
+
+<br>
+
+![image](https://user-images.githubusercontent.com/87363461/203923725-f949c355-ef15-4ba8-86c5-bc337476ff9b.png)
+
+
+<br>
+
+cout을 이용하여 maxv의 값이 콘솔에 출력된다.
+<br>
+이는 템플릿 매칭으로 검출된 위치에서 정규화된 상관계수 값을 나타내며, 이 값이 1에 가까운 실수일 수록 매칭이 잘 되었음을 의미한다.

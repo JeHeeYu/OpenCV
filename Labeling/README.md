@@ -105,4 +105,12 @@ connectedComponentsWithStats() 함수의 인자 구성은 stats와 centroids 말
 <br>
 보통 stats와 centroids 인자에는 Mat 자료형 변수를 지정한다.
 
-### [레이블링 예제 코드]
+### [레이블링 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Labeling/Labeling.cpp)
+
+### 실행 결과
+
+![image](https://user-images.githubusercontent.com/87363461/203916181-46629614-17d3-4847-a2b8-45edf81b0163.png)
+
+<br>
+
+왼쪽 그림은 src 입력 영상이고 오른쪽 영상은 흰색 점을 찾아 초록색 사각형으로 표시한 결과이다.

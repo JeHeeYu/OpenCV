@@ -23,6 +23,7 @@ OpenCV 이론 및 Code 모음 Repository
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Labeling" target="_blank">레이블링(Labeling)</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Contour" target="_blank">외곽선(Contour) 검출</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Template%20Matching" target="_blank">템플릿 매칭(Template Matching)</li>
+    <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Cascade%20Classifier" target="_blank">캐스케이드 분류기(Cascade Classifier)</li>
 </ul>
 
 

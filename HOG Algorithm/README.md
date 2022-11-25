@@ -109,4 +109,9 @@ svmdetector : 선형 SVM 분류기를 위한 계수
 보행자 검출을 할 경우 HOGDescriptor::getDefaultPeopleDetector() 함수가 반환한 분류기 계수를 HOGDescriptor::setSVMDetector() 함수의 인자로 전달하면 된다.
 
   
-### [보행자 검출 예제 코드]
+### [보행자 검출 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/HOG%20Algorithm/HOG.cpp)
+
+### 실행 결과
+
+![image](https://user-images.githubusercontent.com/87363461/203925916-b3361434-3f71-42a4-9a21-dd64b0126867.png)
+

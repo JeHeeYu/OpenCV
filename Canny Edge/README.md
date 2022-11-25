@@ -103,3 +103,19 @@ threshold1과 threshold2 두 개의 임계값은 캐니 에지 검출기의 히�
 보통 threshold1에는 낮은 임계값을, threshold2에는 높은 임계값을 지정한다.
 <br>
 보통 낮은 임계값과 높은 임계값은 1:2 또는 1:3 비율을 사용한다.
+
+### [캐니 에지 검출 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Canny%20Edge/CannyEdge.cpp)
+
+### 실행 결과
+![image](https://user-images.githubusercontent.com/87363461/203905862-3d47fa65-2c71-48d3-a7fa-a467b044b0a3.png)
+
+<br>
+<br>
+Canny() 함수를 이용하여 각각 dst1, dst2에 지정한다.
+<br>
+<br>
+임계값의 비율을 1:2 와 1:3으로 설정하고 결과 영상을 출력한다.
+<br>
+임계값을 낮출수록 에지로 판별되는 픽셀이 더 많아져 dst1 영상에는 에지 픽셀이 더 많이 검출된다.
+<br>
+다만 임계값을 낮출수록 잡음에 해당하는 픽셀도 에지로 검출할 가능성이 높아진다.

@@ -16,6 +16,6 @@ int main()
 	imshow("src1", src1); 
 	imshow("src2", src2);
 	imshow("dst", dst);
-
+ 
 	waitKey();
 }

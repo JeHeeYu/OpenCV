@@ -73,3 +73,4 @@ QRCodeDetector::detectAndDecode() 함수는 기본적으로 입력 영상 img에
 <br>
 만약 QR 코드의 네 꼭지점 좌표 또는 정사각형 형태의 QR 코드 영상이 필요하다면 points와 straight_qrcode 인자를 전달하면 된다.
 
+### [QR 코드 검출 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/QR%20Code/QRCode.cpp)

@@ -63,4 +63,67 @@ Mat src = imread("lenna.bmp", IMREAD_GRAYSCALE);
 Mat dst;
 threshold(src, dst, 128, 255, THRESH_BINARY);
 ```
+### [영상 이진화 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Binarization/Threshold.cpp)
 
+### 실행 결과
+
+![image](https://user-images.githubusercontent.com/87363461/203908844-1f16dc6c-ae23-4122-a20a-74c1952018d7.png)
+
+<br>
+레나 영상에 임계값 128, 255와 255에 inverse를 준 결과 영상이다. 임계값을 128을 줄 경우 정상적인 이진화 작업이 수행되지만,
+<br>
+255를 줄 경우 그레이스케일 최대값 255와 같아져 영상이 정상 출력되지 않는다.
+
+## 적응형 이진화(Adaptive Binarization)
+threshold() 함수를 이용하는 것과 같이 영상의 모든 픽셀에 같은 임계값을 적용하여 이진화를 수행하는 방식을 전역 이진화(global binarization)이라고 한다.
+<br>
+<br>
+그러나 영상 특성에 따라 전역 이진화를 적용하기 어려운 경우가 있다.
+<br>
+<br>
+이처럼 불균일한 조명 성분을 가지고 있는 영상 등에 적용할 수 있는,
+<br>
+즉, 서로 다른 임계값을 사용하는 방식을 적응형 이진화(adaptive binarization) 이라고 한다.
+<br>
+<br>
+적응형 이진화는 영상의 모든 픽셀에서 정해진 크기의 사각형 블록 영역을 설정하고, 블록 영역의 내부 픽셀 값 분포로부터 고유의 임계값을 결정하여 이진화하는 방식이다.
+<br>
+<br>
+이진화 방식은 다음과 같은 수식으로 결정할 수 있다.
+<br>
+
+![image](https://user-images.githubusercontent.com/87363461/203909022-410f49f8-3364-4b81-a350-b909dc1d12d3.png)
+
+
+<br>
+
+u(x, y)는 (x, y) 주변 블록 영역의 픽셀 값 평균이고 C는 임계값의 크기를 조정하는 상수이다.
+<br>
+블록 내부 픽셀 값의 평균 u(x, y)는 일반적인 산술 평균을 사용하거나 가우시안 함수 형태의 가중지를 적용한 가중 평균을 사용한다.
+<br>
+상수 C는 영상 특성에 따라 사용자가 결정한다.
+
+## 검출 방법
+```
+void adaptiveThreshold(InputArray src, OutputArray dst, double maxValue, int adaptiveMethod,
+                       int thresholdType, int blockSize, double C);
+
+src : 입력 영상으로 CV_8UC1 또는 CV_8SC1 지정
+dst : 출력 영상으로 src와 같은 크기의 같은 타입
+maxValue : 이진화 결과 영상의 최댓값
+adaptiveMethod : 적응형 이진화에서 블록 평균 계산 방법 지정
+thresholdType : THERSH_BINARY 또는 THRESH_BINARY_INV 중 지정
+blockSize : 임계값 계산 시 사용하는 블록 크기로 3보다 같거나 큰 홀수 지정
+C : 임계값 조정을 위한 상수로 블록 평균에서 C를 뺀 값을 임계값으로 사용
+```
+
+adaptiveThreshold() 함수는 각 픽셀 주변의 blockSize x blockSize 영역에서 평균을 구한다.
+<br>
+그 후 평균에서 상수 C를 뺀 값을 해당 픽셀의 임계값으로 사용한다.
+<br>
+이때 블록 평균 영역울 구하는 방식은 adaptiveMethod 인자를 통해 설정할 수 있다. adaptiveMethod 인자에 ADAPTIVE_THRESH_MEAN_C 를 지정하면 blockSize x blockSize 크기의 주변 영역 픽셀로부터 산술 평균을 구한다.
+<br> 
+<br>
+ADAPTIVE_THRESH_GAUSSIAN_C 를 지정하면 각 픽셀 주변에 blockSize x blockSize 크기의 가우시안 마스크를 적용하여 가우시안 가중 평균을 계산한다.
+
+### [적응형 이진화 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Binarization/AdaptiveBinarization.cpp)

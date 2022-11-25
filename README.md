@@ -22,6 +22,7 @@ OpenCV 이론 및 Code 모음 Repository
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Binarization" target="_blank">영상의 이진화(Binarization)</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Labeling" target="_blank">레이블링(Labeling)</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Contour" target="_blank">외곽선(Contour) 검출</li>
+    <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Template%20Matching" target="_blank">템플릿 매칭(Template Matching)</li>
 </ul>
 
 

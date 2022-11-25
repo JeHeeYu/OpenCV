@@ -18,6 +18,7 @@ OpenCV 이론 및 Code 모음 Repository
   <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Perspective" target="_blank">영상의 투시 변환(Perspective Transform)</li>
   <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Sobel%20Scharr%20Filter" target="_blank">소벨 필터(Sobel Filter)와 샤르 필터(Scharr Filter)</li>
   <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Canny%20Edge" target="_blank">캐니 에지(Canny Edge) 검출</li>
+    <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Hough%20Transform" target="_blank">허프 변환(Hough Transform) 검출</li>
 </ul>
 
 

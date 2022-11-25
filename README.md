@@ -11,6 +11,7 @@ OpenCV 이론 및 Code 모음 Repository
   <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Arithmetic" target="_blank">영상의 산술 연산</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Logical" target="_blank">영상의 논리 연산</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/blob/main/Bluring%20Gaussian/README.md" target="_blank">블러링(Bluring)과 가우시안(Gaussian)</li>
+    <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Noise%20Filter" target="_blank">노이즈 필터(Noise Filter)</li>
 <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Sharpening" target="_blank">샤프닝(Sharpening)</li>
 <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Affine%20Transformation" target="_blank">어파인 변환(Affine Transformation)</li>
 </ul>

@@ -25,6 +25,7 @@ OpenCV 이론 및 Code 모음 Repository
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Template%20Matching" target="_blank">템플릿 매칭(Template Matching)</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/Cascade%20Classifier" target="_blank">캐스케이드 분류기(Cascade Classifier)</li>
     <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/HOG%20Algorithm" target="_blank">HOG(Histogram of Oriented Gradients)</li>
+    <li><a href="https://github.com/JeHeeYu/OpenCV/tree/main/QR%20Code" target="_blank">QR(Quick Response) Code 검출</li>
 </ul>
 
 

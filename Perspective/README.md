@@ -71,4 +71,16 @@ warpPerspective() 함수는 3 x 3 투시 변환 행렬을 가지고 있을 때, 
 <br>
 src, dst, M, dsize 4개의 인자만 지정하여 사용할 수 있고 나머지 인자는 기본 값을 가지고 있다.
   
-### [투시 변환 예제 코드]
+### [투시 변환 예제 코드](https://github.com/JeHeeYu/OpenCV/blob/main/Perspective/Perspective%20Transform.cpp)
+
+### 실행 결과
+
+![image](https://user-images.githubusercontent.com/87363461/203904367-429f716e-bd25-4148-9bf6-2bee7d385b92.png)
+
+<br>
+<br>
+프로그램 실행 시 src 창에 레나 영상이 출력된다.
+<br>
+이 영상에서 4곳의 모서리를 마우스로 클릭하면 직사각형의 형태로 투시 변환 결과 영상이 dst 창에 나타난다.
+<br>
+얼굴 부분을 기준으로 잡고 4곳의 모서리를 마우스로 클릭하면 얼굴의 형태가 dst 창에 출력된다.
